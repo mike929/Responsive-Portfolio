@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 
 <head>
 
@@ -12,69 +12,51 @@
 </head>
 
 <body>
-    <header class="header">
-        <h1 id="logo">Michael Wilson</h1>
-        <ul class="main-nav">
-            <!-- <li><a href="../../classwork/Basic-Portfolio/index.html">About</a></li>
-            <li><a href="../../classwork/Basic-Portfolio/portfolio.html">Portfolio</a></li>
-            <li><a href="../../classwork/Basic-Portfolio/contact.html">Contact</a></li> -->
-            <li><a href="./index.html">About</a></li>
-            <li><a href="./portfolio.html">Portfolio</a></li>
-            <li><a href="./contact.html">Contact</a></li>
 
-        </ul>
+    <header id="masthead">
+        <div class="container">
+            <a href="index.html" id="logo">Michael Wilson</a>
+            <nav>
+                <a href="./index.html">About</a>
+                <a href="./portfolio.html">Portfolio</a>
+                <a href="./contact.html">Contact</a>
+            </nav>
+        </div>
     </header>
-    <div class="border">
-        <section class="main-content">
-            <h2 id="title">Contact</h2>
-            <hr>
-            <div id="contentform">
-                <!-- <form action="/action_page.php" method="get"> -->
-                <form>
-                    <ul style="list-style-type:none">
 
-                        <li>
-                            <p class="left">
-                                <label for="name">Name</label>
-                            </p>
-                            <input type="text" name="name" id="name" placeholder="John Smith" size="129" />
+    <div id="main-container" class="container">
+        <section class="main-section">
+            <h1>Contact</h1>
 
-                        </li>
-<br>
-                        <li>
-                            <p>
-                                <label for="email">Email<span class="req"></span></label>
-                            </p>
-                            <input type="email" name="email" id="email" placeholder="john.smith@gmail.com" size="129" />
+            <form id="contact-form">
+                <ul>
+                    <li>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="John Smith" required="required">
 
-                        </li>
-                        <br>
-                        <li>
-                            <div class="divider"></div>
-                        </li>
-                        <li>
-                            <p>
-                                <label for="Message">Message</label>
-                            </p>
-                            <!-- <input type="message" name="message" id="message"/> -->
-                            <textarea cols="130" rows="10" name="Message"></textarea>
-                        </li>
+                    </li>
 
-                        <li>
-                            <button class="button" onclick="alert('This is just a test!')">Submit</button>
-                            <!-- <button type="button" onclick="alert('This is just a test!')">Submit</button> -->
+                    <li>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="john.smith@gmail.com" required="required">
 
-                            <!-- <input class="btn btn-submit" type="submit" value="Submit" /> -->
-                        </li>
+                    </li>
+                    <li>
+                        <label for="Message">Message</label>
+                        <textarea id="Message" name="Message" required="required"></textarea>
+                    </li>
+                </ul>
+                <input type="submit">
+            </form>
 
-                    </ul>
-                </form>
-            </div>
+
         </section>
+
     </div>
-    <!-- <div footer="footer" style="position:relative; width:100%;"> -->
+
     <footer>
-        <div>Copywrite ©
+        <div class="container">
+            Copywrite &copy;
         </div>
     </footer>
 
