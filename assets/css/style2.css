@@ -16,10 +16,12 @@
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
+
+
 [class*="col-"] {
     float: left;
-    padding: 15px;
-    border: 1px solid red;
+    padding: 0;
+    /* border: 1px solid red; */
 }
 
 /* img {
@@ -46,12 +48,38 @@
 
 @media all and (max-width: 640px) {} */
 
-@media (max-width: 640px ) {
+
+
+@media (min-width: 360px) and (max-width: 640px ) {
 	header h1 {
         margin-top: 0;
 		padding: .25em;
 		text-align: center;
-	}
+    }
+    
+    #logo {
+        width: 100%;
+    }
+
+    #masthead {
+        /* position: fixed;
+        z-index: 99; */
+        width: 100%;
+        margin: 0 0 30px;
+        overflow: auto;
+        color: #ffffff;
+        background: #ffffff;
+        border-bottom: 2px solid #cccccc;
+    }
+
+    .auth-image {
+        /* float: left; */
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+        margin-right: 25px;
+    }
+
 	nav {
 		font-size: 1.3em;
 		margin-right: 2.9em;
@@ -91,9 +119,10 @@
         height: auto;
     }
     .main-section {
-        font-size: 2vw;
+        /* font-size: 2vw; */
+        font-size: 1rem;
         width: 100%;
-        margin: auto 10px 200px 20px;
+        margin: auto auto 700px 20px;
     }
 	header {
 		/* padding: .35em; */
@@ -131,11 +160,12 @@
 		text-decoration: none;
     }
     
-    #main-section {
+    /* #main-section {
         width: 100%;
         margin-top: auto;
         padding: 40px;
-    }
+    } */
+    
 }
 
 @media (min-width: 769px) and (max-width: 980px) {
